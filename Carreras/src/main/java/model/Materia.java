@@ -1,4 +1,4 @@
-package model;
+package co.edu.uniquindio.poo.Java.Java.Java.Java.java.model.Carrera;
 
 import java.util.ArrayList;
 
@@ -8,7 +8,7 @@ public class Materia {
     private String horasSemana;
     private int creditos;
     private String semestre;
-    private ArrayList <record> listaProfesores;
+    private ArrayList <Profesor> listaProfesores;
 
     public Materia(String nombre, String codigo, String horasSemana, int creditos) {
         this.nombre = nombre;
@@ -59,11 +59,11 @@ public class Materia {
         this.semestre = semestre;
     }
 
-    public ArrayList<record> getListaProfesores() {
+    public ArrayList<Profesor> getListaProfesores() {
         return listaProfesores;
     }
 
-    public void setListaProfesores(ArrayList<record> listaProfesores) {
+    public void setListaProfesores(ArrayList<Profesor> listaProfesores) {
         this.listaProfesores = listaProfesores;
     }
 

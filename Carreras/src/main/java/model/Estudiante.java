@@ -1,4 +1,4 @@
-package model;
+package co.edu.uniquindio.poo.Java.Java.Java.Java.java.model.Carrera;
 
 public class Estudiante{
     private String nombre;

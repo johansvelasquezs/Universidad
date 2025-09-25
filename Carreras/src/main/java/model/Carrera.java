@@ -1,11 +1,11 @@
-package model;
+package co.edu.uniquindio.poo.Java.Java.Java.Java.java.model.Carrera;
 
 import java.util.ArrayList;
 
 public class Carrera {
     private String nombre;
     private int numeroEstudiantes;
-    private Arraylist <Materia> listaMaterias;
+    private ArrayList<Materia> listaMaterias;
 
     public Carrera(String nombre, int numeroEstudiantes) {
         this.nombre = nombre;
@@ -33,4 +33,5 @@ public class Carrera {
                 ", numeroEstudiantes=" + numeroEstudiantes +
                 '}';
     }
+    
 }
