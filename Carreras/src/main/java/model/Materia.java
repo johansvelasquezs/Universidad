@@ -10,13 +10,14 @@ public class Materia {
     private String semestre;
     private ArrayList <Profesor> listaProfesores;
 
-    public Materia(String nombre, String codigo, String horasSemana, int creditos) {
+    public Materia(String nombre, String codigo, String horasSemana, int creditos, String semestre) {
         this.nombre = nombre;
         this.codigo = codigo;
         this.horasSemana = horasSemana;
         this.creditos = creditos;
-        this.listaProfesores = new ArrayList();
         this.semestre = semestre;
+        this.listaProfesores = new ArrayList();
+
     }
 
     public String getNombre() {

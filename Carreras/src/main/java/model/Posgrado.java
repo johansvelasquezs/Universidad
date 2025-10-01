@@ -1,16 +1,18 @@
 package co.edu.uniquindio.poo.Java.Java.Java.Java.java.model.Carrera;
 
 public class Posgrado extends Estudiante {
-    private enum tipoCurso;
     private String temaInvestigacion;
-    public Posgrado(enum tipoCurso, String temaInvestigacion) {
-        this.curso = curso;
+    private tipoCurso curso;
+
+    public Posgrado(String nombre, String id, String docId, String carrera, String semestre, String temaInvestigacion,
+                    tipoCurso curso) {
+        super(nombre, id, docId, carrera, semestre);
         this.temaInvestigacion = temaInvestigacion;
+        this.curso = curso;
     }
-    public Enum getCurso() {
-        return curso;
-    }
-    public void setCurso(Enum curso) {
+    public Posgrado(String nombre2, String id, String docId, String carrera, String semestre, int edad, String temaInvestigacion, tipoCurso curso) {
+        super(nombre2, String.valueOf(edad), id, docId, carrera );
+        this.temaInvestigacion = temaInvestigacion;
         this.curso = curso;
     }
     public String getTemaInvestigacion() {
@@ -19,9 +21,14 @@ public class Posgrado extends Estudiante {
     public void setTemaInvestigacion(String temaInvestigacion) {
         this.temaInvestigacion = temaInvestigacion;
     }
-    @Override
-    public String toString(){
-        return "Posgrado [curso=" + curso + ", temaInvestigacion=" + temaInvestigacion + "]";
+    public tipoCurso getCurso() {
+        return curso;
     }
-
+    public void setCurso(tipoCurso curso) {
+        this.curso = curso;
+    }
+    @Override
+    public String toString() {
+        return "Posgrado [temaInvestigacion=" + temaInvestigacion + ", curso=" + curso + "]";
+    }
 }
